@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  seq:
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5340:80"
+
+  sqldata:
+    environment:
+      - SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+    ports:
+      - "5433:1433"
+    volumes:
+      - tamagotchi-sqldata:/var/opt/mssql
+
+  tamagotchi.application:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionString=Server=sqldata;Database=TamagotchiDB;User Id=sa;Password=Pass@word;
+      - SeqServerUrl=http://seq
+    ports:
+      - "5100:80"
+
+volumes:
+  tamagotchi-sqldata:
+    external: false

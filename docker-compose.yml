@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  seq:
+    image: datalust/seq:latest
+
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2019-latest 
+
+  tamagotchi.application:
+    image: ${DOCKER_REGISTRY-}tamagotchiapplication
+    build:
+      context: .
+      dockerfile: Tamagotchi.Application/Dockerfile
+    depends_on:
+      - sqldata
+      - seq

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamagotchi.UnitTests", "Tam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamagotchi.Application", "Tamagotchi.Application\Tamagotchi.Application.csproj", "{B34E1064-B459-4854-A23D-AD8D01D7162B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tamagotchi.Infrastructure", "Tamagotchi.Infrastructure\Tamagotchi.Infrastructure.csproj", "{848F8BC7-1109-487F-860A-41B4A15B0B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamagotchi.Infrastructure", "Tamagotchi.Infrastructure\Tamagotchi.Infrastructure.csproj", "{848F8BC7-1109-487F-860A-41B4A15B0B10}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BDA23600-BFD7-43C4-80CA-97310B3279A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{848F8BC7-1109-487F-860A-41B4A15B0B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848F8BC7-1109-487F-860A-41B4A15B0B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848F8BC7-1109-487F-860A-41B4A15B0B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA23600-BFD7-43C4-80CA-97310B3279A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA23600-BFD7-43C4-80CA-97310B3279A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA23600-BFD7-43C4-80CA-97310B3279A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA23600-BFD7-43C4-80CA-97310B3279A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
