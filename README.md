@@ -1,4 +1,4 @@
-# tamagotchi
+# Tamagotchi
 API for playing a simplified version of Tamagotchi
 
 **Running the solution locally**
