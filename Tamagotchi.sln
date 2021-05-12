@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{25AFBFF0-116D-4D16-B7C9-357CFE145B2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{78DD1C7E-1C21-4CDF-9ED8-E16209F925AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamagotchi.Domain", "Tamagotchi.Domain\Tamagotchi.Domain.csproj", "{70171DEE-79F1-41F7-9332-77212410CA4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamagotchi.UnitTests", "Tamagotchi.UnitTests\Tamagotchi.UnitTests.csproj", "{8F010FA6-E901-4CAD-8366-579458AF8153}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamagotchi.Application", "Tamagotchi.Application\Tamagotchi.Application.csproj", "{B34E1064-B459-4854-A23D-AD8D01D7162B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tamagotchi.Infrastructure", "Tamagotchi.Infrastructure\Tamagotchi.Infrastructure.csproj", "{848F8BC7-1109-487F-860A-41B4A15B0B10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70171DEE-79F1-41F7-9332-77212410CA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70171DEE-79F1-41F7-9332-77212410CA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70171DEE-79F1-41F7-9332-77212410CA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70171DEE-79F1-41F7-9332-77212410CA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F010FA6-E901-4CAD-8366-579458AF8153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F010FA6-E901-4CAD-8366-579458AF8153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F010FA6-E901-4CAD-8366-579458AF8153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F010FA6-E901-4CAD-8366-579458AF8153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B34E1064-B459-4854-A23D-AD8D01D7162B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B34E1064-B459-4854-A23D-AD8D01D7162B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B34E1064-B459-4854-A23D-AD8D01D7162B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B34E1064-B459-4854-A23D-AD8D01D7162B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848F8BC7-1109-487F-860A-41B4A15B0B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848F8BC7-1109-487F-860A-41B4A15B0B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848F8BC7-1109-487F-860A-41B4A15B0B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848F8BC7-1109-487F-860A-41B4A15B0B10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70171DEE-79F1-41F7-9332-77212410CA4F} = {25AFBFF0-116D-4D16-B7C9-357CFE145B2E}
+		{8F010FA6-E901-4CAD-8366-579458AF8153} = {78DD1C7E-1C21-4CDF-9ED8-E16209F925AD}
+		{B34E1064-B459-4854-A23D-AD8D01D7162B} = {25AFBFF0-116D-4D16-B7C9-357CFE145B2E}
+		{848F8BC7-1109-487F-860A-41B4A15B0B10} = {25AFBFF0-116D-4D16-B7C9-357CFE145B2E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBDB6FF7-3255-4182-B245-38FFD5E99060}
+	EndGlobalSection
+EndGlobal
