@@ -36,3 +36,5 @@ Since this is the first time that I've used this library, it's probably not the 
 
 **Out of scope for this solution**:
 I didn't implement logic for what will happen if the dragon keeps on getting hungry, or his happiness keeps on decreasing, since they're out of scope for this test, but in the real world it would check for this metrics and it would either change the life status to died of hunger or died of saddness or something similar.
+
+I didn't create integration tests, testing the actual API endpoints with something like an in memory database, since it seemed out of scope for what I'm trying to do here, but in a real world scenario I would create this tests using similar practices to [these](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-5.0).
