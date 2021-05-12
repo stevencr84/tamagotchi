@@ -31,8 +31,8 @@ This application was written using .NET 5 which can run both on windows/mac/linu
 
 The API has a background service that implements BackgroundService abstract class, this service runs scheduled tasks every 60 seconds to update the existing dragons Age and their metrics.
 
-**Note on the use of Akka.Net:
+**Note on the use of Akka.Net**:
 Since this is the first time that I've used this library, it's probably not the best implementation, nor is it likely using it's full potential for handling messages. This is work in progress.
 
-**Out of scope for this solution:
+**Out of scope for this solution**:
 I didn't implement logic for what will happen if the dragon keeps on getting hungry, or his happiness keeps on decreasing, since they're out of scope for this test, but in the real world it would check for this metrics and it would either change the life status to died of hunger or died of saddness or something similar.
