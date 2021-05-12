@@ -34,6 +34,8 @@ The API has a background service that implements BackgroundService abstract clas
 **Note on the use of Akka.Net**:
 Since this is the first time that I've used this library, it's probably not the best implementation, nor is it likely using it's full potential for handling messages. This is work in progress.
 
+If I hadn't used this library I would normally implement CQRS with [Mediatr](https://github.com/jbogard/MediatR) for in-process message handling.
+
 **Out of scope for this solution**:
 I didn't implement logic for what will happen if the dragon keeps on getting hungry, or his happiness keeps on decreasing, since they're out of scope for this test, but in the real world it would check for this metrics and it would either change the life status to died of hunger or died of saddness or something similar.
 
