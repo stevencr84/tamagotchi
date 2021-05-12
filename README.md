@@ -13,8 +13,16 @@ This should build and run the containers, and you should be able to access the A
 
 http://localhost:5100/swagger/index.html
 
-To view the generated logs by the API got to the following url
+This endpoint lists your existing dragons
+http://localhost:5100/api/dragon
+This endpoint creates a new dragon with the name you specified and will return an endpoint (something like this: http://localhost:5100/api/dragon/{createdDragonId}) to check on the created dragon status and metrics
+http://localhost:5100/api/Dragon/create
+This endpoint is for petting your draggon, providing the dragon's ID
+http://localhost:5100/api/dragon/pet
+This endpoint is for feeding your draggon, providing the dragon's ID
+http://localhost:5100/api/dragon/feed
 
+To view the generated logs by the API got to the following url
 http://localhost:5340/ (Seq logs)
 
 ## High level architecture 
@@ -25,3 +33,6 @@ The API has a background service that implements BackgroundService abstract clas
 
 **Note on the use of Akka.Net:
 Since this is the first time that I've used this library, it's probably not the best implementation, nor is it likely using it's full potential for handling messages. This is work in progress.
+
+**Out of scope for this solution:
+I didn't implement logic for what will happen if the dragon keeps on getting hungry, or his happiness keeps on decreasing, since they're out of scope for this test, but in the real world it would check for this metrics and it would either change the life status to died of hunger or died of saddness or something similar.
