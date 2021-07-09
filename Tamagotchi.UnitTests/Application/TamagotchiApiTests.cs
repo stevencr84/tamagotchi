@@ -41,7 +41,7 @@ namespace Tamagotchi.UnitTests.Application
         }
 
         [Fact]
-        public async void Create_Dragon_With_Valid_Command_Returns_Ok()
+        public async Task Create_Dragon_With_Valid_Command_Returns_Ok()
         {
             //Arrange
             var fakeCreateDragonCommand = new CreateDragonCommand("Test Dragon");
@@ -70,7 +70,7 @@ namespace Tamagotchi.UnitTests.Application
         }
 
         [Fact]
-        public async void Create_Dragon_With_InvalidValid_Command_Returns_BadRequest()
+        public async Task Create_Dragon_With_InvalidValid_Command_Returns_BadRequest()
         {
             //Arrange
             var fakeCreateDragonCommand = new CreateDragonCommand(string.Empty);
@@ -177,7 +177,7 @@ namespace Tamagotchi.UnitTests.Application
         }
 
         [Fact]
-        public async void Get_Dragons_Returns_List()
+        public async Task Get_Dragons_Returns_List()
         {
             //Arrange
             DragonViewModel[] fakeResult = { new DragonViewModel() };
@@ -195,7 +195,7 @@ namespace Tamagotchi.UnitTests.Application
         }
 
         [Fact]
-        public async void Get_Dragon_Returns_Dragon_Instance()
+        public async Task Get_Dragon_Returns_Dragon_Instance()
         {
             //Arrange
             var fakeDragonId = 1;
@@ -214,7 +214,7 @@ namespace Tamagotchi.UnitTests.Application
         }
 
         [Fact]
-        public async void Get_Dragon_Inexistent_Id_Returns_NotFound()
+        public async Task Get_Dragon_Inexistent_Id_Returns_NotFound()
         {
             //Arrange
             var fakeDragonId = 1;
@@ -232,7 +232,7 @@ namespace Tamagotchi.UnitTests.Application
         }
 
         [Fact]
-        public async void Get_Dragon_Invalid_Id_Returns_BadRequest()
+        public async Task Get_Dragon_Invalid_Id_Returns_BadRequest()
         {
             //Arrange
             var fakeDragonId = 0;

@@ -26,7 +26,7 @@ namespace Tamagotchi.UnitTests.Application
         }
 
         [Fact]
-        public async void DragonActor_Receives_Create_Dragon_Command_Should_Return_Created_Dragon_Id()
+        public async Task DragonActor_Receives_Create_Dragon_Command_Should_Return_Created_Dragon_Id()
         {
             //Arrange
             var fakeCreateDragonCommand = new CreateDragonCommand("Test Dragon");
